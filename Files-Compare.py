@@ -10,4 +10,7 @@ with open('C:\\Users\username\Desktop\list1.txt', 'r') as fileA:
 
         problemSet = fileA_set.intersection(fileB_set)
 
-        print (len(problemSet) == 0)
+        if len(problemSet) == 0:
+            print("Files are unique - no duplicates found...")
+        else:
+            print("Values found in both files: \n", str(problemSet)[1:-1])
